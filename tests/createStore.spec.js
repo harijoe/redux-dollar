@@ -1,4 +1,4 @@
-import generatedConfigA from './fixtures/generatedConfigA'
+import generatedConfigA from './fixtures/generatedConfig'
 import generateInitialState from 'lib/generateInitialState'
 import generateActionCreator from 'lib/generateActionCreator'
 import createStore from 'lib/createStore'

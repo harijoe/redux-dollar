@@ -1,4 +1,4 @@
-import generatedConfigA from './fixtures/generatedConfigA'
+import generatedConfigA from './fixtures/generatedConfig'
 import generateActionCreator from 'lib/generateActionCreator'
 
 describe('(Lib) generateActionCreator', () => {

@@ -1,5 +1,5 @@
 import _ from 'lodash'
-import generatedConfigA from './fixtures/generatedConfigA'
+import generatedConfigA from './fixtures/generatedConfig'
 import generateReducer from 'lib/generateReducer'
 import generateInitialState from 'lib/generateInitialState'
 import generateActionCreator from 'lib/generateActionCreator'
