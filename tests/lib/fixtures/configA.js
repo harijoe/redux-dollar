@@ -1,11 +1,13 @@
+import leaf from 'lib/generateLeaf'
+
 export default {
   auth: {
-    mystring: null,
-    mybool: null,
-    mynumber: null,
+    mystring: leaf({ initialValue: 'initial string' }),
+    mybool: leaf(),
+    mynumber: leaf(),
   },
   post: {
-    onestring: null,
-    anotherstring: null,
+    onestring: leaf({ initialValue: null }),
+    anotherstring: leaf({ initialValue: 0 }),
   },
 }

@@ -1,6 +1,10 @@
+import _ from 'lodash'
+
 export const generateConfig = (config, prefix = '') => {
   let result = {}
-  if (config !== null) {
+  if (config['_isLeaf'] === true) {
+    result = _.omit(config, '_isLeaf')
+  } else {
     result = Object.keys(config)
       .reduce((result, key) => {
         if (key === '_id') {

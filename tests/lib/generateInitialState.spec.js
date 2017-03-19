@@ -6,13 +6,13 @@ describe('(Lib) generateInitialState', () => {
 
   const expectedInitialState = {
     auth: {
-      mystring: null,
+      mystring: 'initial string',
       mybool: null,
       mynumber: null,
     },
     post: {
       onestring: null,
-      anotherstring: null,
+      anotherstring: 0,
     },
   }
 
