@@ -1,3 +1,3 @@
 # React Dollar
 
-Docs
+Doc
