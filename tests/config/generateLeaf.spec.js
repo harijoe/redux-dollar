@@ -1,5 +1,4 @@
-import _ from 'lodash'
-import leaf from 'lib/generateLeaf'
+import leaf from 'lib/config/generateLeaf'
 
 describe('(Lib) generateLeaf', () => {
   it('should generate leaf for initialValue', () => {

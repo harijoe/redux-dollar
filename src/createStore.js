@@ -1,8 +1,8 @@
 import createStore from './lib/createStore'
-import generateReducer from './lib/generateReducer'
-import generateActionCreator from './lib/generateActionCreator'
-import generateConfig from './lib/generateConfig'
-import generateInitialState from './lib/generateInitialState'
+import generateReducer from './lib/generators/generateReducer'
+import generateActionCreator from './lib/generators/generateActionCreator'
+import generateConfig from './lib/config/generateConfig'
+import generateInitialState from './lib/generators/generateInitialState'
 import config from './config'
 
 export default () => {

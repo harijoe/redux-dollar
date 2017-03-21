@@ -1,7 +1,7 @@
 import { createStore } from 'redux'
-import generateReducer from './generateReducer'
-import generateInitialState from './generateInitialState'
-import generateActionCreator from './generateActionCreator'
+import generateReducer from './generators/generateReducer'
+import generateInitialState from './generators/generateInitialState'
+import generateActionCreator from './generators/generateActionCreator'
 
 export default (config) => {
   const reducer = generateReducer(config)

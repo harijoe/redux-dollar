@@ -1,6 +1,6 @@
-import generateConfig from 'lib/generateConfig'
-import configA from './fixtures/config'
-import generatedConfigA from './fixtures/generatedConfig'
+import generateConfig from 'lib/config/generateConfig'
+import configA from '../fixtures/config'
+import generatedConfigA from '../fixtures/generatedConfig'
 
 describe('(Lib) generateConfig', () => {
   const config = generateConfig(configA)

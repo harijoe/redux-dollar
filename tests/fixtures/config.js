@@ -1,4 +1,4 @@
-import leaf from 'lib/generateLeaf'
+import leaf from 'lib/config/generateLeaf'
 
 export default {
   auth: {

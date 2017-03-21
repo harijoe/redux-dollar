@@ -1,5 +1,5 @@
-import generateConfig from 'lib/generateConfig'
-import leaf from 'lib/generateLeaf'
+import generateConfig from 'lib/config/generateConfig'
+import leaf from 'lib/config/generateLeaf'
 
 const config = {
   auth: {

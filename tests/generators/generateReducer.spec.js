@@ -1,8 +1,8 @@
 import _ from 'lodash'
-import generatedConfigA from './fixtures/generatedConfig'
-import generateReducer from 'lib/generateReducer'
-import generateInitialState from 'lib/generateInitialState'
-import generateActionCreator from 'lib/generateActionCreator'
+import generatedConfigA from '../fixtures/generatedConfig'
+import generateReducer from 'lib/generators/generateReducer'
+import generateInitialState from 'lib/generators/generateInitialState'
+import generateActionCreator from 'lib/generators/generateActionCreator'
 
 describe('(Lib) generateReducer', () => {
   const reducer = generateReducer(generatedConfigA)

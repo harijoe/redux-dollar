@@ -1,5 +1,5 @@
-import generateInitialState from 'lib/generateInitialState'
-import generatedConfigA from './fixtures/generatedConfig'
+import generateInitialState from 'lib/generators/generateInitialState'
+import generatedConfigA from '../fixtures/generatedConfig'
 
 describe('(Lib) generateInitialState', () => {
   const initialState = generateInitialState(generatedConfigA)

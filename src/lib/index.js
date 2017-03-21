@@ -1,5 +1,5 @@
-import generateLeaf from './generateLeaf'
-import generateConfig from './generateConfig'
+import generateLeaf from './config/generateLeaf'
+import generateConfig from './config/generateConfig'
 import baseCreateStore from './createStore'
 
 export const leaf = generateLeaf

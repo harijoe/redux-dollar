@@ -1,5 +1,5 @@
-import generatedConfigA from './fixtures/generatedConfig'
-import generateActionCreator from 'lib/generateActionCreator'
+import generatedConfigA from '../fixtures/generatedConfig'
+import generateActionCreator from 'lib/generators/generateActionCreator'
 
 describe('(Lib) generateActionCreator', () => {
   it('should create action for simple case', () => {
