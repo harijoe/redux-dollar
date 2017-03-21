@@ -1,14 +1,20 @@
 import select from 'lib/effects/select'
-import generatedConfigA from '../fixtures/generatedConfig'
-import generateSelector from 'lib/generators/generateSelector'
-import { select as classicSelect } from 'redux-saga/effects'
+import generatedConfig from '../fixtures/generatedConfig'
+import generateInitialState from 'lib/generators/generateInitialState'
 
 describe('(Lib) select', () => {
   it('should create select effect', () => {
-    const effect = select(generatedConfigA.auth.mynumber)
-    const expectedEffect = classicSelect(generateSelector(generatedConfigA.auth.mynumber))
-    console.log(effect)
-    console.log(expectedEffect)
-    expect(effect).to.deep.equal(expectedEffect)
+    const effect = select(generatedConfig.auth.mystring)
+    const state = generateInitialState(generatedConfig)
+
+    expect(effect).to.have.property('@@redux-saga/IO')
+      .that.is.true
+    expect(effect).to.have.property('SELECT')
+      .with.property('selector')
+        .that.is.a('function')
+        .that.satisfies(selector => selector(state) === state.auth.mystring)
+    expect(effect).to.have.property('SELECT')
+      .that.have.property('args')
+      .that.is.an('array')
   })
 })
